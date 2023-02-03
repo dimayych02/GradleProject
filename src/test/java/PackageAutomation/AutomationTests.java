@@ -48,8 +48,8 @@ public class AutomationTests extends BrowserSetting {
 
             pageBrowser.onResponse(response -> {
 
-                //Проверка на статус код 200
-                softAssert.assertEquals(response.status(), 200);
+                //Проверка на статус код 302
+                softAssert.assertEquals(response.status(), 302);
 
             });
 
