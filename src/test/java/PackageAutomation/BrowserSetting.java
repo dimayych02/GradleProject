@@ -12,11 +12,12 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.UUID;
 
-public class BrowserSetting {
+public class BrowserSetting  {
     protected Browser browser;
     protected Page pageBrowser;
     protected BrowserContext BrowserContext;
     protected Boolean isTraceEnabled = false;
+
 
 
     @BeforeClass
@@ -53,6 +54,8 @@ public class BrowserSetting {
     }
 
 
+
+
     @AfterMethod
     public void attachFilesToFailedTest(ITestResult result) throws IOException {
         if (!result.isSuccess()) {
@@ -74,4 +77,6 @@ public class BrowserSetting {
             }
         }
     }
+
+
 }

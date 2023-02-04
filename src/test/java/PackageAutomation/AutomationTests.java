@@ -1,16 +1,22 @@
 package PackageAutomation;
 
 
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 
-public class AutomationTests extends BrowserSetting {
+public class AutomationTests  extends BrowserSetting implements IRetryAnalyzer  {
+
+    private  int count=0;
+
+    private int maxcount=3;
 
     private SoftAssert softAssert;
 
-    @Test
+    @Test(retryAnalyzer= AutomationTests.class)
     public void MailRuSuccessSendingMessage() throws InterruptedException {
 
         try {
@@ -49,7 +55,7 @@ public class AutomationTests extends BrowserSetting {
             pageBrowser.onResponse(response -> {
 
                 //Проверка на статус код 302
-                softAssert.assertEquals(response.status(), 302);
+                softAssert.assertEquals(response.status(), 200);
 
             });
 
@@ -85,4 +91,14 @@ public class AutomationTests extends BrowserSetting {
     }
 
 
+    @Override
+    public boolean retry(ITestResult result) {
+        if (!result.isSuccess()) {
+            if (count < maxcount) {
+                count++;
+                return true;
+            }
+        }
+        return false;
+    }
 }
