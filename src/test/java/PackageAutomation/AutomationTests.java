@@ -1,23 +1,22 @@
 package PackageAutomation;
 
 
-import org.testng.IRetryAnalyzer;
-import org.testng.ITestResult;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 
-public class AutomationTests  extends BrowserSetting implements IRetryAnalyzer  {
+public class AutomationTests  extends BrowserSetting   {
 
     private  int count=0;
 
-    private int maxcount=3;
+    private int maxcount=2;
 
     private SoftAssert softAssert;
 
-    @Test(retryAnalyzer= AutomationTests.class)
-    public void MailRuSuccessSendingMessage() throws InterruptedException {
+
+    @Test(retryAnalyzer = TestNGRetry.class)
+    public void MailRuSuccessSendingMessage() throws NullPointerException {
 
         try {
 
@@ -54,7 +53,7 @@ public class AutomationTests  extends BrowserSetting implements IRetryAnalyzer  
 
             pageBrowser.onResponse(response -> {
 
-                //Проверка на статус код 302
+                //Проверка на статус код 200
                 softAssert.assertEquals(response.status(), 200);
 
             });
@@ -64,6 +63,7 @@ public class AutomationTests  extends BrowserSetting implements IRetryAnalyzer  
 
 
             softAssert.assertAll();
+
 
         }
 
@@ -76,6 +76,7 @@ public class AutomationTests  extends BrowserSetting implements IRetryAnalyzer  
             pageBrowser.locator("//span[@class=\"compose-button__wrapper\"]").click();
 
             softAssert.assertAll();
+
 
         }
 
@@ -91,14 +92,5 @@ public class AutomationTests  extends BrowserSetting implements IRetryAnalyzer  
     }
 
 
-    @Override
-    public boolean retry(ITestResult result) {
-        if (!result.isSuccess()) {
-            if (count < maxcount) {
-                count++;
-                return true;
-            }
-        }
-        return false;
-    }
+
 }

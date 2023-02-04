@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853b1bba-9150-4ae3-bbff-5d8b60c8a2de" name="Changes" comment="add3">
+    <list default="true" id="853b1bba-9150-4ae3-bbff-5d8b60c8a2de" name="Changes" comment="add4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PackageAutomation/AutomationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PackageAutomation/AutomationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PackageAutomation/BrowserSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PackageAutomation/BrowserSetting.java" afterDir="false" />
@@ -215,8 +215,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.AutomationTests" />
-        <item itemvalue="TestNG.AutomationTests.MailRuTest" />
         <item itemvalue="Gradle.playwright1 [allureServe]" />
+        <item itemvalue="TestNG.AutomationTests.MailRuTest" />
         <item itemvalue="JUnit.AutomationTests.searchForExactTitleTest" />
         <item itemvalue="JUnit.AutomationTests" />
       </list>
@@ -280,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675459671163</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add4">
+      <created>1675519740877</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675519740877</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,7 +338,8 @@
     <MESSAGE value="add1" />
     <MESSAGE value="add2" />
     <MESSAGE value="add3" />
-    <option name="LAST_COMMIT_MESSAGE" value="add3" />
+    <MESSAGE value="add4" />
+    <option name="LAST_COMMIT_MESSAGE" value="add4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -2,6 +2,7 @@ package PackageAutomation;
 
 import com.microsoft.playwright.*;
 import io.qameta.allure.Allure;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -10,6 +11,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.UUID;
 
 public class BrowserSetting  {
@@ -20,8 +22,12 @@ public class BrowserSetting  {
 
 
 
-    @BeforeClass
+   /* @BeforeClass
     public void setUp() {
+
+    }*/
+    @BeforeMethod
+    public void openBrowser(){
         //инициализация браузера
         browser = Playwright
                 .create()
@@ -31,7 +37,7 @@ public class BrowserSetting  {
 
         BrowserContext = browser.newContext();
 
-        //тсоздаем трейсинг
+        //создаем трейсинг
 
         BrowserContext.tracing().start(new Tracing.StartOptions()
                 .setScreenshots(true)
@@ -42,22 +48,27 @@ public class BrowserSetting  {
 
         //создаем новую страницу
         pageBrowser = BrowserContext.newPage();
-    }
 
 
-    @AfterClass
-    public void tearDown() {
-        if (browser != null) {
-            browser.close();
-            browser = null;
-        }
     }
+   /* @BeforeMethod
+    public void Browser(){
+        pageBrowser.navigate("https://mail.ru");
+    } */
+
+
+
+   /* @BeforeSuite
+    public void RerunTests(ITestContext iTestContext){
+        Arrays.stream(iTestContext.getAllTestMethods()).forEach(x->x.setRetryAnalyzerClass(TestNGRetry.class));
+    } */
 
 
 
 
     @AfterMethod
     public void attachFilesToFailedTest(ITestResult result) throws IOException {
+
         if (!result.isSuccess()) {
             String uuid = UUID.randomUUID().toString();
             byte[] screenshot = pageBrowser.screenshot(new Page.ScreenshotOptions()
@@ -74,6 +85,10 @@ public class BrowserSetting  {
                         .stop(new Tracing.StopOptions()
                                 .setPath(tracePath));
                 Allure.addAttachment("trace.zip", new ByteArrayInputStream(Files.readAllBytes(tracePath)));
+
+
+
+
             }
         }
     }
