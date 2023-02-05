@@ -82,11 +82,34 @@ public class AutomationTests  extends BrowserSetting   {
 
 
     }
+    @Test(dataProvider = "DataTest")
+    public void FailedAuthorization(String Login,String Password){
+
+        pageBrowser.navigate("https://mail.ru");
+
+        //Авторизация пользователя
+
+        pageBrowser.locator("//button[@data-testid=\"enter-mail-primary\"]").click();
+
+        pageBrowser.frameLocator("iframe[class=\"ag-popup__frame__layout__iframe\"]").
+                locator("input[name=\"username\"]").fill(Login);
+
+        pageBrowser.keyboard().press("Enter");
+
+
+        pageBrowser.frameLocator("iframe[class=\"ag-popup__frame__layout__iframe\"]").
+                locator("input[name=\"password\"]").fill(Password);
+
+
+    }
+
+
+
 
     @DataProvider
     public Object[][] DataTest(){
 
-        Object[][] data={{""}};
+        Object[][] data={{"taskmail123456","123456"},{"djfjfjfjjf","vsemprivet@12345671245etedgvg"}};
         return data;
 
     }
