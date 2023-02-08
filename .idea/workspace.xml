@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853b1bba-9150-4ae3-bbff-5d8b60c8a2de" name="Changes" comment="add4">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PackageAutomation/AutomationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PackageAutomation/AutomationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,12 +119,38 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.48735633&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.playwright1 [allureServe]">
+  <component name="RunManager" selected="TestNG.AutomationTests">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="playwright.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hh" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PackageAutomation.hh" />
+      <module name="playwright.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PackageAutomation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="playwright1 [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -144,37 +172,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AutomationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="playwright.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PackageAutomation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PackageAutomation" />
-      <option name="MAIN_CLASS_NAME" value="PackageAutomation.AutomationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AutomationTests.searchForExactTitleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="playwright.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PackageAutomation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PackageAutomation" />
-      <option name="MAIN_CLASS_NAME" value="PackageAutomation.AutomationTests" />
-      <option name="METHOD_NAME" value="searchForExactTitleTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AutomationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="playwright.test" />
       <extension name="coverage">
@@ -192,7 +189,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AutomationTests.MailRuTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="hh" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="playwright.test" />
       <extension name="coverage">
         <pattern>
@@ -201,9 +198,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="PackageAutomation" />
-      <option name="MAIN_CLASS_NAME" value="PackageAutomation.AutomationTests" />
-      <option name="METHOD_NAME" value="MailRuTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="PackageAutomation.hh" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -212,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.playwright1 [allureServe]" />
         <item itemvalue="TestNG.AutomationTests" />
-        <item itemvalue="TestNG.AutomationTests.MailRuTest" />
-        <item itemvalue="JUnit.AutomationTests.searchForExactTitleTest" />
-        <item itemvalue="JUnit.AutomationTests" />
+        <item itemvalue="TestNG.hh" />
+        <item itemvalue="Application.hh" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.playwright1 [allureServe]" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675545052055</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add4">
+      <created>1675618140245</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675618140245</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

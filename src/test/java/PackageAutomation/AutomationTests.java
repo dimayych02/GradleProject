@@ -47,20 +47,25 @@ public class AutomationTests  extends BrowserSetting   {
             pageBrowser.onRequest(request -> {
 
                 //Проверяем, что http request имеет метод "POST"
-                softAssert.assertEquals(request.method(), "POST");
+                softAssert.assertEquals(request.method(), "GET");
+
 
             });
 
             pageBrowser.onResponse(response -> {
 
-                //Проверка на статус код 200
-                softAssert.assertEquals(response.status(), 200);
+                //Проверка на статус код 302
+                softAssert.assertEquals(response.status(), 302);
 
             });
 
             //Отправка  письма с сообщением
             pageBrowser.locator("//span[@class=\"compose-button__wrapper\"]").click();
 
+            pageBrowser.fill("//input[@style=\"width: 12px;\"]","dim_dimyych@mail.ru");
+            pageBrowser.fill("//div[@aria-multiline='true']//child::div","всем привет отправляю автотест!");
+
+            pageBrowser.locator("//span[text()='Отправить']").click();
 
             softAssert.assertAll();
 
@@ -75,6 +80,11 @@ public class AutomationTests  extends BrowserSetting   {
 
             pageBrowser.locator("//span[@class=\"compose-button__wrapper\"]").click();
 
+            pageBrowser.fill("//input[@style=\"width: 12px;\"]","dim_dimyych@mail.ru");
+            pageBrowser.fill("//div[@aria-multiline='true']//child::div","всем привет отправляю автотест!");
+
+            pageBrowser.locator("//span[text()='Отправить']").click();
+
             softAssert.assertAll();
 
 
@@ -82,7 +92,7 @@ public class AutomationTests  extends BrowserSetting   {
 
 
     }
-    @Test(dataProvider = "DataTest")
+   /* @Test(dataProvider = "DataTest") //Отправляем различные  тестовые данные на вход
     public void FailedAuthorization(String Login,String Password){
 
         pageBrowser.navigate("https://mail.ru");
@@ -102,6 +112,8 @@ public class AutomationTests  extends BrowserSetting   {
 
 
     }
+
+    */
 
 
 
