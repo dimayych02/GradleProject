@@ -1,8 +1,7 @@
-package PackageAutomation;
+package PackagePlaywright;
 
 import com.microsoft.playwright.*;
 import io.qameta.allure.Allure;
-import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -11,7 +10,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.UUID;
 
 public class BrowserSetting  {

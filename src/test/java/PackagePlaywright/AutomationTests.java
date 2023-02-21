@@ -1,12 +1,9 @@
-package PackageAutomation;
+package PackagePlaywright;
 
 
-import io.restassured.response.Response;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
-import java.util.List;
 
 import static io.restassured.path.json.JsonPath.given;
 

@@ -1,4 +1,4 @@
-package PackageAutomation;
+package PackagePlaywright;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
