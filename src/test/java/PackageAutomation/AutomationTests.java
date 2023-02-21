@@ -1,9 +1,14 @@
 package PackageAutomation;
 
 
+import io.restassured.response.Response;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import java.util.List;
+
+import static io.restassured.path.json.JsonPath.given;
 
 
 public class AutomationTests  extends BrowserSetting   {
@@ -125,6 +130,7 @@ public class AutomationTests  extends BrowserSetting   {
         return data;
 
     }
+
 
 
 

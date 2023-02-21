@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853b1bba-9150-4ae3-bbff-5d8b60c8a2de" name="Changes" comment="add4">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PackageAutomation/AutomationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PackageAutomation/AutomationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,59 +122,88 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.48735633&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.rmicompiler&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.AutomationTests">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="playwright.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="hh" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PackageAutomation.hh" />
+  <component name="RunManager" selected="TestNG.APITesting">
+    <configuration name="APITesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="playwright.test" />
+      <shortenClasspath name="ARGS_FILE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PackageAutomation.*" />
+          <option name="PATTERN" value="APIAutotests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="APIAutotests" />
+      <option name="MAIN_CLASS_NAME" value="APIAutotests.APITesting" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="playwright1 [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="allureServe" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="APITesting.AuthorizationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIAutotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIAutotests" />
+      <option name="MAIN_CLASS_NAME" value="APIAutotests.APITesting" />
+      <option name="METHOD_NAME" value="AuthorizationTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APITesting.FAiledAuthorizationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIAutotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIAutotests" />
+      <option name="MAIN_CLASS_NAME" value="APIAutotests.APITesting" />
+      <option name="METHOD_NAME" value="FAiledAuthorizationTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APITesting.SuccessRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIAutotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIAutotests" />
+      <option name="MAIN_CLASS_NAME" value="APIAutotests.APITesting" />
+      <option name="METHOD_NAME" value="SuccessRegistration" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="AutomationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="playwright.test" />
+      <shortenClasspath name="ARGS_FILE" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="PackageAutomation.*" />
@@ -189,16 +219,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hh" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="playwright.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PackageAutomation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PackageAutomation" />
-      <option name="MAIN_CLASS_NAME" value="PackageAutomation.hh" />
+    <configuration default="true" type="TestNG">
+      <shortenClasspath name="ARGS_FILE" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -208,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.APITesting" />
+        <item itemvalue="TestNG.APITesting.SuccessRegistration" />
         <item itemvalue="TestNG.AutomationTests" />
-        <item itemvalue="TestNG.hh" />
-        <item itemvalue="Application.hh" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.playwright1 [allureServe]" />
+        <item itemvalue="TestNG.APITesting.FAiledAuthorizationTest" />
+        <item itemvalue="TestNG.APITesting.AuthorizationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675618140245</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add4">
+      <created>1675838548860</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675838548860</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

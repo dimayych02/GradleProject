@@ -13,11 +13,16 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    implementation 'com.microsoft.playwright:playwright:1.28.1'
+
+    implementation 'com.microsoft.playwright:playwright:1.30.0'
+    implementation 'io.rest-assured:rest-assured:5.3.0'
+    implementation 'io.rest-assured:json-schema-validator:5.3.0'
+    implementation 'io.rest-assured:json-path:5.3.0'
     testImplementation 'org.testng:testng:7.3.0'
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.8.2'
     testImplementation group: 'com.tngtech.java', name: 'junit-dataprovider', version: '1.13.1'
-
+    testImplementation 'com.codeborne:selenide:6.11.0'
+    testImplementation 'com.codeborne:selenide-proxy:6.11.0'
 
 }
 
